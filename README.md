@@ -43,7 +43,7 @@ If you prefer to run the project via Python instead of the executable:
 git clone https://github.com/rawfilejson/VidPull.git
 
 # Enter the directory
-cd VidPull
+cd VidPull/Source Code
 
 # Install required dependencies
 pip install -r requirements.txt
