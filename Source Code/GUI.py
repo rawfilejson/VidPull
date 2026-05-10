@@ -113,7 +113,7 @@ title_label = Label(window, text="", font=("Arial", 12, "bold"),
                     fg=FG, bg=BG, wraplength=520)
 title_label.pack(pady=2)
 
-# ---- options ----
+# options
 optsframe = Frame(window, bg=BG)
 optsframe.pack(pady=8)
 
@@ -156,7 +156,7 @@ Button(destframe, text="📁 Save to…", command=browse_folder, bg=PANEL, fg=FG
 
 Label(destframe, textvariable=dest, bg=BG, fg=DIM, anchor="w").pack(side=LEFT, padx=8, fill=X, expand=True)
 
-# ---- progress + status ----
+# progress + status
 style = ttk.Style()
 try:
     style.theme_use("clam")
@@ -172,7 +172,7 @@ progress.pack(pady=(12, 4), padx=16, fill=X)
 status = Label(window, text="ready.", font=("Arial", 10), fg=DIM, bg=BG)
 status.pack()
 
-# ---- history ----
+# history
 hist_frame = Frame(window, bg=BG)
 hist_frame.pack(fill=BOTH, expand=True, padx=16, pady=(10, 4))
 
@@ -206,7 +206,7 @@ def open_history_item(_evt):
 hist_list.bind("<Double-Button-1>", open_history_item)
 refresh_history()
 
-# ---- footer ----
+# footer
 foot = Frame(window, bg=BG)
 foot.pack(pady=(6, 12))
 
@@ -216,7 +216,7 @@ bmc.pack()
 bmc.bind("<Button-1>", lambda _: webbrowser.open(BMC_URL))
 
 
-# ---- thumbnail loading ----
+# thumbnail loading
 def load_thumb(url):
     if not HAS_PIL:
         return
@@ -234,7 +234,7 @@ def load_thumb(url):
         pass
 
 
-# ---- progress hook ----
+# progress hook
 def hook(d):
     if d["status"] == "downloading":
         total = d.get("total_bytes") or d.get("total_bytes_estimate") or 0
@@ -253,7 +253,7 @@ def hook(d):
         window.after(0, lambda: status.config(text="merging / postprocessing…", fg="#FAC921"))
 
 
-# ---- main download flow ----
+# main download flow
 def run_download():
     url = entry.get().strip()
     path = dest.get()
