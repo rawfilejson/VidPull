@@ -2,7 +2,7 @@
 
 A small, fast YouTube downloader for Windows. No ads, no shady redirects, no "click here to continue" pop-ups. Just a paste-box, a download button, and the file ends up where you told it to.
 
-<img src="Source Code/VidPull.png" width="500" alt="VidPull"/>
+<img src="Source Code/assets/VidPull.png" width="500" alt="VidPull"/>
 
 ## Why
 
