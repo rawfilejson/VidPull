@@ -4,6 +4,8 @@ A small, fast YouTube downloader for Windows. No ads, no shady redirects, no "cl
 
 <img src="Source Code/assets/VidPull.png" width="500" alt="VidPull"/>
 
+<a href="https://www.buymeacoffee.com/rawfilejson" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
 ## Why
 
 Every web-based YT downloader I tried was 90% ads and 10% bait-and-switch. So I packaged `yt-dlp` behind a tiny Tk GUI and called it a day.
